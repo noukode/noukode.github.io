@@ -1,0 +1,238 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 0.5rem 1.5rem;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+section:nth-child(even) {
+  background-color: #333646;
+}
+
+section:nth-child(odd) {
+  background-color: #242734;
+  -webkit-box-shadow: 0 0 2rem #1a1a1a;
+          box-shadow: 0 0 2rem #1a1a1a;
+}
+
+section .container .section-title {
+  padding: 4.4rem 0 !important;
+}
+
+section.hero .container .hero-section {
+  position: absolute;
+  top: 6rem;
+}
+
+section.hero .container .hero-section .hero-title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+section.hero .container .hero-section .social-media a:hover {
+  color: #c3c3c3 !important;
+}
+
+.about-typo {
+  position: relative;
+}
+
+.about-typo img {
+  position: relative;
+  z-index: 1;
+}
+
+.about-typo h1 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.about-typo h1.first {
+  z-index: 0;
+  top: 4rem;
+  left: 3rem;
+}
+
+.about-typo h1.second {
+  z-index: 2;
+  bottom: 3rem;
+  left: 2.5rem;
+}
+
+#skills .container .row .card {
+  cursor: default;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#works .container .grid {
+  margin: 6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#works .container .grid .title {
+  font-size: 7rem;
+  text-align: center;
+  grid-area: title;
+}
+
+#works .container .grid .more {
+  text-align: center;
+}
+
+#works .container .grid .a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#works .container .grid .card {
+  overflow: hidden;
+  color: #fff;
+}
+
+#works .container .grid .card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#works .container .grid .card .card-img-overlay .card-title {
+  width: 60%;
+  font-size: 2.1em;
+}
+
+#works .container .grid .card .card-img-overlay .card-text {
+  color: rgba(255, 255, 255, 0.8);
+  width: 40%;
+  text-align: right;
+}
+
+#works .container .grid .card .card-img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#works .container .grid .card:hover {
+  cursor: pointer;
+}
+
+#works .container .grid .card:hover .card-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+a:hover .socmed {
+  color: #cacaca;
+}
+
+footer {
+  background-color: #242734;
+}
+
+@media only screen and (min-width: 768px) {
+  section.hero .container .hero-section {
+    top: 15rem;
+  }
+  section.hero .container .hero-section .hero-title {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  .about-typo h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  .about-typo h1.first {
+    top: 5rem;
+    left: 3rem;
+  }
+  .about-typo h1.second {
+    bottom: 4rem;
+    left: 3.5rem;
+  }
+  #skills .container .row .card img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #skills .container .row .card:hover img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  #works .container .grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "title item_1" "item_2 item_1" "item_2 item_3" "more item_3";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (minmax(200px, 360px))[4];
+        grid-template-rows: repeat(4, minmax(200px, 360px));
+    gap: 2% 10%;
+  }
+  #works .container .grid .title {
+    text-align: left;
+    height: 250px;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  #works .container .grid .item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: item_1;
+  }
+  #works .container .grid .item-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: item_2;
+  }
+  #works .container .grid .item-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: item_3;
+  }
+  #works .container .grid .more {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: more;
+    text-align: left;
+    place-self: center;
+  }
+  #works .container .grid .card {
+    overflow: hidden;
+    max-height: 700px;
+  }
+  #works .container .grid .card .card-img {
+    width: 150% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
