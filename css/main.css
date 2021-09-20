@@ -21,6 +21,10 @@ section:nth-child(odd) {
           box-shadow: 0 0 2rem #1a1a1a;
 }
 
+section .container {
+  margin-top: 40px;
+}
+
 section .container .section-title {
   padding: 4.4rem 0 !important;
 }
