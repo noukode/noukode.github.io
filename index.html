@@ -272,8 +272,7 @@
           data-aos="fade-up"
           data-aos-offset="20"
           data-aos-delay="300">
-            <a href="#">
-              <div class="card bg-dark">
+              <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#consolModal">
                 <img src="img/Card Work Section 3-01.jpg" class="card-img" alt="Consol Management System">
                 <div class="card-img-overlay">
                   <div class="card-title">Consol Management System</div>
@@ -282,27 +281,26 @@
                   </div>
                 </div>
               </div>
-            </a>
           </div>
           <div class="item-2 mb-5"
           data-aos="fade-up"
           data-aos-offset="20"
           data-aos-delay="600">
-            <div class="card bg-dark">
-              <img src="img/Card Work Section 2-01.jpg" class="card-img" alt="Royyan Landing Page">
-              <div class="card-img-overlay">
-                <div class="card-title">Royyan Landing Page</div>
-                <div class="card-text">
-                  Landing Page
-                </div>
+              <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#stockOpnameModal">
+                  <img src="img/Card Work Section 2-01.jpg" class="card-img" alt="Royyan Landing Page">
+                  <div class="card-img-overlay">
+                    <div class="card-title">Stock Opname System</div>
+                    <div class="card-text">
+                      System, App
+                    </div>
+                  </div>
               </div>
-            </div>
           </div>
           <div class="item-3 mb-5"
           data-aos="fade-up"
           data-aos-offset="20"
           data-aos-delay="900">
-            <div class="card bg-dark m-0">
+            <div class="card bg-dark m-0" data-bs-toggle="modal" data-bs-target="#travelModal">
               <img src="img/Card Work Section 1-01.jpg" class="card-img" alt="Travel Landing Page">
               <div class="card-img-overlay">
                 <div class="card-title">Travel Landing Page</div>
@@ -330,26 +328,26 @@
             data-aos-offset="20">Get in touch</h2>
           </div>
         </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-between mb-5">
           <div class="col-lg-6 mb-3"
           data-aos="fade-up"
           data-aos-offset="20"
           data-aos-delay="300">
-            <form action="" class="row g-3">
+            <form action="" method="post" onsubmit="sendMessage(); return false;" class="row g-3">
               <div class="col-md-12">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <input type="text" class="form-control" id="name" name="name" required autocomplete="off">
               </div>
               <div class="col-md-12">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="off">
               </div>
               <div class="col-md-12">
                 <label for="email" class="form-label">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Send</button>
               </div>
             </form>
           </div>
@@ -410,6 +408,105 @@
     <footer class="text-center pt-3 pb-2">
       <h6>Build with <i class="bi bi-heart-fill text-danger"></i> By <a href="http://github.com/maulan909" class=" text-light">Hilmi Maulana Mukhlis</a></h6>
     </footer>
+
+    <!-- Modal Consol Management -->
+    <div class="modal fade" id="consolModal" tabindex="-1" aria-labelledby="consolModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Consolidate Management System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold">Description :</p>
+            <p>This application is the result of my collaboration with an employee from PT. TaniSupply Indonesia, or a company better known as the Tanihub E-Commerce platform, this system is used to detect items that have been prepared by the helper teams (pickers and packers) from different chambers to combine. With this system, the Console team will more easily identify a customer's order package is complete or lacking, with this system, it is hoped that it will make it easier and make packages to speed up delivery to customers.</p>
+            <p class="fw-bold">Type :</p>
+            <p>System Development</p>
+            <p class="fw-bold">Feature :</p>
+            <ul>
+              <li>Data Transaction Uploader</li>
+              <li>Monitored half complete, complete, undetected, delivered</li>
+              <li>User log activity</li>
+            </ul>
+            <p class="fw-bold">Technology :</p>
+            <ul>
+              <li>Codeigniter 3</li>
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Stock Opname -->
+    <div class="modal fade" id="stockOpnameModal" tabindex="-1" aria-labelledby="stockModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stockModalLabel">Stock Opname System</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold">Description :</p>
+            <p>System to simplify the process of calculating stock and stock adjustment</p>
+            <p class="fw-bold">Type :</p>
+            <p>System Development</p>
+            <p class="fw-bold">Feature :</p>
+            <ul>
+              <li>Data Stock Uploader</li>
+              <li>Data Location Uploader</li>
+              <li>Assign user to specific location</li>
+              <li>Comparing data Latest SOH System, and Real stock</li>
+            </ul>
+            <p class="fw-bold">Technology :</p>
+            <ul>
+              <li>Codeigniter 4</li>
+              <li>MySQL</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Travel -->
+    <div class="modal fade" id="travelModal" tabindex="-1" aria-labelledby="travelModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="travelModalLabel">El Burdah Travel Landing Page</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-bold">Description :</p>
+            <p>El Burdah Travel is Travel Agency</p>
+            <p class="fw-bold">Type :</p>
+            <p>UI Design, Figma to HTML</p>
+            <p class="fw-bold">Responsibility :</p>
+            <ul>
+              <li>Create UI Design</li>
+              <li>Convert UI from Figma to Bootstrap CSS</li>
+              <li>Create Responsive Page</li>
+            </ul>
+            <p class="fw-bold">Technology :</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

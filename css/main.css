@@ -8,6 +8,7 @@ body {
 }
 
 section {
+  margin-top: -6.5px;
   overflow-x: hidden;
 }
 
@@ -17,12 +18,6 @@ section:nth-child(even) {
 
 section:nth-child(odd) {
   background-color: #242734;
-  -webkit-box-shadow: 0 0 2rem #1a1a1a;
-          box-shadow: 0 0 2rem #1a1a1a;
-}
-
-section .container {
-  margin-top: 40px;
 }
 
 section .container .section-title {
@@ -31,7 +26,7 @@ section .container .section-title {
 
 section.hero .container .hero-section {
   position: absolute;
-  top: 6rem;
+  top: 6.1rem;
 }
 
 section.hero .container .hero-section .hero-title {
@@ -137,6 +132,20 @@ section.hero .container .hero-section .social-media a:hover {
 
 #works .container .grid .card:hover {
   cursor: pointer;
+}
+
+#works .container .grid .card:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/see.png");
+  background-size: 100px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
 
 #works .container .grid .card:hover .card-img {
