@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
@@ -27,6 +27,7 @@ section .container .section-title {
 section.hero .container .hero-section {
   position: absolute;
   top: 6.1rem;
+  width: 100%;
 }
 
 section.hero .container .hero-section .hero-title {
@@ -79,8 +80,8 @@ section.hero .container .hero-section .social-media a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #works .container .grid .title {
@@ -108,8 +109,8 @@ section.hero .container .hero-section .social-media a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #works .container .grid .card .card-img-overlay .card-title {
@@ -125,7 +126,7 @@ section.hero .container .hero-section .social-media a:hover {
 
 #works .container .grid .card .card-img {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -135,7 +136,7 @@ section.hero .container .hero-section .social-media a:hover {
 }
 
 #works .container .grid .card:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -150,7 +151,7 @@ section.hero .container .hero-section .social-media a:hover {
 
 #works .container .grid .card:hover .card-img {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 a:hover .socmed {
@@ -165,74 +166,89 @@ footer {
   section.hero .container .hero-section {
     top: 15rem;
   }
+
   section.hero .container .hero-section .hero-title {
-    font-size: 7rem;
-    line-height: 6rem;
+    font-size: 12rem;
+    line-height: 10rem;
   }
+
   .about-typo h1 {
     font-size: 5rem;
     font-weight: 500;
   }
+
   .about-typo h1.first {
     top: 5rem;
     left: 3rem;
   }
+
   .about-typo h1.second {
     bottom: 4rem;
     left: 3.5rem;
   }
+
   #skills .container .row .card img {
     -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+    filter: grayscale(100%);
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+
   #skills .container .row .card:hover img {
     -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
+    filter: grayscale(0%);
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   #works .container .grid {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "title item_1" "item_2 item_1" "item_2 item_3" "more item_3";
+    grid-template-areas: 'title item_1'
+      'item_2 item_1'
+      'item_2 item_3'
+      'more item_3';
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (minmax(200px, 360px))[4];
-        grid-template-rows: repeat(4, minmax(200px, 360px));
+    grid-template-rows: repeat(4, minmax(200px, 360px));
     gap: 2% 10%;
   }
+
   #works .container .grid .title {
     text-align: left;
     height: 250px;
     -ms-flex-item-align: stretch;
-        -ms-grid-row-align: stretch;
-        align-self: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: title;
   }
+
   #works .container .grid .item-1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: item_1;
   }
+
   #works .container .grid .item-2 {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: item_2;
   }
+
   #works .container .grid .item-3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: item_3;
   }
+
   #works .container .grid .more {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -240,12 +256,15 @@ footer {
     text-align: left;
     place-self: center;
   }
+
   #works .container .grid .card {
     overflow: hidden;
     max-height: 700px;
   }
+
   #works .container .grid .card .card-img {
     width: 150% !important;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

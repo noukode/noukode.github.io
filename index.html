@@ -1,518 +1,910 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nou Kode | Web Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/glitch.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body id="home" data-bs-spy="scroll" data-bs-target="myNav" data-bs-offset="1" class="scrollspy-example" tabindex="0">
-    <nav id="myNav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-              <img src="img/logo.svg" alt="" width="40">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <section class="hero">
-         <div class="container position-relative">
-           <div class="row">
-             <div class="col-lg-7">
-               <!-- <img src="img/Hero glitch.png" data-aos="fade-up" alt="" class="img-fluid"> -->
-              <video poster="img/Hero glitch.png" class="img-fluid" data-aos="fade-up" playsinline autoplay muted loop>
-                <source src="img/edited 1.1 glitch.mp4" type="video/mp4">
-              </video>
-             </div>
-           </div>
-             <div class="row hero-section">
-                 <div class="col-4 col-lg-7">
-                     <h1 class="hero-title" 
-                     data-aos="fade-right"
-                     data-aos-delay="300"
-                     >NouKode <br></h1>
-                 </div>
-                 <div
-                 data-aos="fade-left"
-                 data-aos-delay="400"
-                  class="col-lg-5 d-flex align-items-start flex-column justify-content-end">
-                     <h2 class="h5 fw-light">Introduction</h2>
-                     <p class="h2 fw-light fs-1">
-                         Hello, I'm a Web Developer
-                     </p>
-                     <div class="social-media">
-                         <a href="https://github.com/noukode" class="text-light me-2 fs-4"><i class="bi bi-github"></i></a>
-                         <a href="https://linkedin.com/in/maulana909" class="text-light mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
-                         <a href="https://www.instagram.com/noukode" class="text-light mx-2 fs-4"><i class="bi bi-instagram"></i></a>
-                         <a href="http://www.facebook.com/hilmi.maulana.946" class="text-light ms-2 fs-4"><i class="bi bi-facebook"></i></a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <div class="row justify-content-center section-title">
-                <div class="col text-center">
-                    <h2
-                    data-aos="fade-up"
-                    data-aos-offset="20"
-                    >About</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 about-typo py-md-5">
-                    <img 
-                    data-aos="fade-up"
-                    data-aos-offset="20"
-                    data-aos-delay="400" src="img/About.png" alt="" class="img-fluid">
-                    <h1 class="first position-absolute" 
-                    data-aos="fade-right"
-                    data-aos-offset="20"
-                    data-aos-delay="300">Web</h1>
-                    <h1 class="second"
-                    data-aos="fade-left"
-                    data-aos-offset="20"
-                    data-aos-delay="500">Developer</h1>
-                </div>
-                <div 
-                data-aos="fade-left"
-                data-aos-offset="20"
-                data-aos-delay="600"
-                class="col-lg-7 d-flex align-items-start flex-column justify-content-center py-5">
-                    <h4 class="fw-medium mb-3">Hello there...</h4>
-                    <p class="fs-5 fw-light lh-lg">
-                        I’m Hilmi Maulana Mukhlis, a Web Developer, focused in Back End Development, I graduated from STIKOM EL RAHMA BOGOR with Diploma 1 in Informatics and Computer Technician.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skills">
-      <div class="container">
-        <div class="row justify-content-center section-title">
-          <div class="col text-center">
-            <h2
-            data-aos="fade-up"
-            data-aos-offset="20">Skills & Tools</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20">
-            <div class="card">
-              <img src="img/html5.svg" class="card-img-top" alt="HTML5">
-              <div class="card-body">
-                <h3 class="text-center">HTML</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="100">
-            <div class="card">
-              <img src="img/CSS3.svg" class="card-img-top" alt="CSS3">
-              <div class="card-body">
-                <h3 class="text-center">CSS</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="200">
-            <div class="card">
-              <img src="img/JavaScript.svg" class="card-img-top" alt="JavaScript">
-              <div class="card-body">
-                <h3 class="text-center">Basic Javascript</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20">
-            <div class="card">
-              <img src="img/Bootstrap.svg" class="card-img-top" alt="Bootstrap">
-              <div class="card-body">
-                <h3 class="text-center">Bootstrap</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="100">
-            <div class="card">
-              <img src="img/Figma.svg" class="card-img-top" alt="Figma">
-              <div class="card-body">
-                <h3 class="text-center">Figma</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="200">
-            <div class="card">
-              <img src="img/PHP.svg" class="card-img-top" alt="PHP">
-              <div class="card-body">
-                <h3 class="text-center">PHP</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="300">
-            <div class="card">
-              <img src="img/MySQL.svg" class="card-img-top" alt="MySQL">
-              <div class="card-body">
-                <h3 class="text-center">MySQL</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-3" 
-          data-aos="fade-down"
-          data-aos-offset="20">
-            <div class="card">
-              <img src="img/codeigniter.svg" class="card-img-top" alt="Codeigniter">
-              <div class="card-body">
-                <h3 class="text-center">Codeigniter</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-sm-3 mb-5"
-          data-aos="fade-down"
-          data-aos-offset="20">
-            <div class="card">
-              <img src="img/Laravel.svg" class="card-img-top" alt="Laravel">
-              <div class="card-body">
-                <h3 class="text-center">Laravel</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center section-title">
-          <div class="col text-center">
-            <h2
-            data-aos="fade-up"
-            data-aos-offset="20">Currently Learn</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-6 col-lg-3 mb-sm-5 mb-5"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="100">
-            <div class="card">
-              <img src="img/Sass.svg" class="card-img-top" alt="Sass">
-              <div class="card-body">
-                <h3 class="text-center">Sass</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3 mb-sm-5 mb-5"
-          data-aos="fade-down"
-          data-aos-offset="20"
-          data-aos-delay="100">
-            <div class="card">
-              <img src="img/tailwindcss.svg" class="card-img-top" alt="Sass">
-              <div class="card-body">
-                <h3 class="text-center">Tailwind CSS</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="works">
-      <div class="container">
-        <div class="grid">
-          <div class="title mb-5">
-            <div class="row">
-              <div class="col-lg-4">
-                <h2
-                data-aos="fade-right"
-                data-aos-offset="20">What I'm working on</h2>
-              </div>
-            </div>
-          </div>
-          <div class="item-1 mb-5"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="300">
-              <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#consolModal">
-                <img src="img/Card Work Section 3-01.jpg" class="card-img" alt="Consol Management System">
-                <div class="card-img-overlay">
-                  <div class="card-title">Consol Management System</div>
-                  <div class="card-text">
-                    System, App
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="item-2 mb-5"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="600">
-              <div class="card bg-dark" data-bs-toggle="modal" data-bs-target="#stockOpnameModal">
-                  <img src="img/Card Work Section 2-01.jpg" class="card-img" alt="Royyan Landing Page">
-                  <div class="card-img-overlay">
-                    <div class="card-title">Stock Opname System</div>
-                    <div class="card-text">
-                      System, App
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="item-3 mb-5"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="900">
-            <div class="card bg-dark m-0" data-bs-toggle="modal" data-bs-target="#travelModal">
-              <img src="img/Card Work Section-01.png" class="card-img" alt="Transporter Landing Page">
-              <div class="card-img-overlay">
-                <div class="card-title">Transporter Landing Page</div>
-                <div class="card-text">
-                  Landing Page
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="more"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="1000">
-            <!-- <a href="#" class="h5 text-light">More Project <i class="bi bi-arrow-right"></i></a> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col section-title text-center">
-            <h2
-            data-aos="fade-up"
-            data-aos-offset="20">Get in touch</h2>
-          </div>
-        </div>
-        <div class="row justify-content-between mb-5">
-          <div class="col-lg-6 mb-3"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="300">
-            <form action="" method="post" onsubmit="sendMessage(); return false;" class="row g-3">
-              <div class="col-md-12">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required autocomplete="off">
-              </div>
-              <div class="col-md-12">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required autocomplete="off">
-              </div>
-              <div class="col-md-12">
-                <label for="email" class="form-label">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-5 mb-3">
-            <div class="row align-items-center">
-              <div class="col text-center">
-                <a target="_blank" href="https://github.com/noukode" class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
-          data-aos="fade-up"
-          data-aos-offset="20"
-          data-aos-delay="400">
-                  <div class="socmed d-flex flex-column flex-lg-row align-items-center">
-                    <div class="icon fs-1">
-                      <i class="bi bi-github"></i>
-                    </div>
-                    <div class="ms-lg-3 text fs-5 fw-light d-flex align-items-center">noukode</div>
-                  </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nou Kode | Web Developer</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/glitch.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body
+        id="home"
+        data-bs-spy="scroll"
+        data-bs-target="myNav"
+        data-bs-offset="1"
+        class="scrollspy-example"
+        tabindex="0"
+    >
+        <nav
+            id="myNav"
+            class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="img/logo.svg" alt="" width="40" />
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/maulana909" class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
-                data-aos="fade-up"
-                data-aos-offset="20"
-                data-aos-delay="600">
-                  <div class="socmed d-flex flex-column flex-lg-row align-items-center">
-                    <div class="icon fs-1">
-                      <i class="bi bi-linkedin"></i>
-                    </div>
-                    <div class="ms-lg-3 text fs-5 fw-light d-flex align-items-center">maulana909</div>
-                  </div>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/maulana_909" class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
-                data-aos="fade-up"
-                data-aos-offset="20"
-                data-aos-delay="800">
-                  <div class="socmed d-flex flex-column flex-lg-row align-items-center">
-                    <div class="icon fs-1">
-                      <i class="bi bi-instagram"></i>
-                    </div>
-                    <div class="ms-lg-3 text fs-5 fw-light d-flex align-items-center">noukode</div>
-                  </div>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/hilmi.maulana.946" class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
-                data-aos="fade-up"
-                data-aos-offset="20"
-                data-aos-delay="1000">
-                  <div class="socmed d-flex flex-column flex-lg-row align-items-center">
-                    <div class="icon fs-1">
-                      <i class="bi bi-facebook"></i>
-                    </div>
-                    <div class="ms-lg-3 text fs-5 fw-light d-flex align-items-center">Hilmi Maulana</div>
-                  </div>
-                </a>
-                
-              </div>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="#home"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div> 
-        </div>
-      </div>
-    </section>
-    <footer class="text-center pt-3 pb-2">
-      <h6>Build with <i class="bi bi-heart-fill text-danger"></i> By <a href="http://github.com/noukode" target="_blank" class="text-light">NouKode</a></h6>
-    </footer>
+        </nav>
+        <section class="hero">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <!-- <img src="img/Hero glitch.png" data-aos="fade-up" alt="" class="img-fluid"> -->
+                        <video
+                            poster="img/Hero glitch.png"
+                            class="img-fluid"
+                            data-aos="fade-up"
+                            playsinline
+                            autoplay
+                            muted
+                            loop
+                        >
+                            <source
+                                src="img/edited 1.1 glitch.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
+                <div class="row hero-section">
+                    <div class="col-4 col-lg-7 position-relative">
+                        <h1
+                            class="hero-title"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                        >
+                            Nou
+                            <br />
+                            Kode
+                            <br />
+                        </h1>
+                    </div>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-delay="400"
+                        class="col-lg-5 d-flex align-items-start flex-column justify-content-center position-relative"
+                    >
+                        <h2 class="h5 fw-light">Introduction</h2>
+                        <p class="h2 fw-light fs-1">
+                            Hello, I'm a Web Developer
+                        </p>
+                        <div class="social-media">
+                            <a
+                                href="https://github.com/noukode"
+                                class="text-light me-2 fs-4"
+                            >
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/maulana909"
+                                class="text-light mx-2 fs-4"
+                            >
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/noukode"
+                                class="text-light mx-2 fs-4"
+                            >
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a
+                                href="http://www.facebook.com/hilmi.maulana.946"
+                                class="text-light ms-2 fs-4"
+                            >
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center section-title">
+                    <div class="col text-center">
+                        <h2 data-aos="fade-up" data-aos-offset="20">About</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 about-typo py-md-5">
+                        <img
+                            data-aos="fade-up"
+                            data-aos-offset="20"
+                            data-aos-delay="400"
+                            src="img/About.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                        <h1
+                            class="first position-absolute"
+                            data-aos="fade-right"
+                            data-aos-offset="20"
+                            data-aos-delay="300"
+                        >
+                            Web
+                        </h1>
+                        <h1
+                            class="second"
+                            data-aos="fade-left"
+                            data-aos-offset="20"
+                            data-aos-delay="500"
+                        >
+                            Developer
+                        </h1>
+                    </div>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-offset="20"
+                        data-aos-delay="600"
+                        class="col-lg-7 d-flex align-items-start flex-column justify-content-center py-5"
+                    >
+                        <h4 class="fw-medium mb-3">Hello there...</h4>
+                        <p class="fs-5 fw-light lh-lg">
+                            I’m Hilmi Maulana Mukhlis, a Web Developer, focused
+                            in Back End Development, I graduated from STIKOM EL
+                            RAHMA BOGOR with Diploma 1 in Informatics and
+                            Computer Technician.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <div class="row justify-content-center section-title">
+                    <div class="col text-center">
+                        <h2 data-aos="fade-up" data-aos-offset="20">
+                            Skills & Tools
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/html5.svg"
+                                class="card-img-top"
+                                alt="HTML5"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">HTML</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="100"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/CSS3.svg"
+                                class="card-img-top"
+                                alt="CSS3"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">CSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="200"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/JavaScript.svg"
+                                class="card-img-top"
+                                alt="JavaScript"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Basic Javascript</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/Bootstrap.svg"
+                                class="card-img-top"
+                                alt="Bootstrap"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Bootstrap</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="100"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/Figma.svg"
+                                class="card-img-top"
+                                alt="Figma"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Figma</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="200"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/PHP.svg"
+                                class="card-img-top"
+                                alt="PHP"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">PHP</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="300"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/MySQL.svg"
+                                class="card-img-top"
+                                alt="MySQL"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">MySQL</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-3"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/codeigniter.svg"
+                                class="card-img-top"
+                                alt="Codeigniter"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Codeigniter</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-sm-3 mb-5"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/Laravel.svg"
+                                class="card-img-top"
+                                alt="Laravel"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Laravel</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center section-title">
+                    <div class="col text-center">
+                        <h2 data-aos="fade-up" data-aos-offset="20">
+                            Currently Learn
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div
+                        class="col-6 col-lg-3 mb-sm-5 mb-5"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="100"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/Sass.svg"
+                                class="card-img-top"
+                                alt="Sass"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Sass</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-sm-5 mb-5"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="100"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/tailwindcss.svg"
+                                class="card-img-top"
+                                alt="Tailwind"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">Tailwind CSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-6 col-lg-3 mb-sm-5 mb-5"
+                        data-aos="fade-down"
+                        data-aos-offset="20"
+                        data-aos-delay="100"
+                    >
+                        <div class="card">
+                            <img
+                                src="img/React.svg"
+                                class="card-img-top"
+                                alt="React"
+                            />
+                            <div class="card-body">
+                                <h3 class="text-center">React</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div class="container">
+                <div class="grid">
+                    <div class="title mb-5">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h2 data-aos="fade-right" data-aos-offset="20">
+                                    What I'm working on
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="item-1 mb-5"
+                        data-aos="fade-up"
+                        data-aos-offset="20"
+                        data-aos-delay="300"
+                    >
+                        <div
+                            class="card bg-dark"
+                            data-bs-toggle="modal"
+                            data-bs-target="#consolModal"
+                        >
+                            <img
+                                src="img/Card Work Section 3-01.jpg"
+                                class="card-img"
+                                alt="Consol Management System"
+                            />
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    Consol Management System
+                                </div>
+                                <div class="card-text">System, App</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="item-2 mb-5"
+                        data-aos="fade-up"
+                        data-aos-offset="20"
+                        data-aos-delay="600"
+                    >
+                        <div
+                            class="card bg-dark"
+                            data-bs-toggle="modal"
+                            data-bs-target="#stockOpnameModal"
+                        >
+                            <img
+                                src="img/Card Work Section 2-01.jpg"
+                                class="card-img"
+                                alt="Royyan Landing Page"
+                            />
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    Stock Opname System
+                                </div>
+                                <div class="card-text">System, App</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="item-3 mb-5"
+                        data-aos="fade-up"
+                        data-aos-offset="20"
+                        data-aos-delay="900"
+                    >
+                        <div
+                            class="card bg-dark m-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#travelModal"
+                        >
+                            <img
+                                src="img/Card Work Section-01.png"
+                                class="card-img"
+                                alt="Transporter Landing Page"
+                            />
+                            <div class="card-img-overlay">
+                                <div class="card-title">
+                                    Transporter Landing Page
+                                </div>
+                                <div class="card-text">Landing Page</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="more"
+                        data-aos="fade-up"
+                        data-aos-offset="20"
+                        data-aos-delay="1000"
+                    >
+                        <!-- <a href="#" class="h5 text-light">More Project <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col section-title text-center">
+                        <h2 data-aos="fade-up" data-aos-offset="20">
+                            Get in touch
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-5">
+                    <div
+                        class="col-lg-6 mb-3"
+                        data-aos="fade-up"
+                        data-aos-offset="20"
+                        data-aos-delay="300"
+                    >
+                        <form
+                            action=""
+                            method="post"
+                            onsubmit="sendMessage(); return false;"
+                            class="row g-3"
+                        >
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">
+                                    Message
+                                </label>
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    id="message"
+                                    rows="4"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 mb-3">
+                        <div class="row align-items-center">
+                            <div class="col text-center">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/noukode"
+                                    class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
+                                    data-aos="fade-up"
+                                    data-aos-offset="20"
+                                    data-aos-delay="400"
+                                >
+                                    <div
+                                        class="socmed d-flex flex-column flex-lg-row align-items-center"
+                                    >
+                                        <div class="icon fs-1">
+                                            <i class="bi bi-github"></i>
+                                        </div>
+                                        <div
+                                            class="ms-lg-3 text fs-5 fw-light d-flex align-items-center"
+                                        >
+                                            noukode
+                                        </div>
+                                    </div>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/maulana909"
+                                    class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
+                                    data-aos="fade-up"
+                                    data-aos-offset="20"
+                                    data-aos-delay="600"
+                                >
+                                    <div
+                                        class="socmed d-flex flex-column flex-lg-row align-items-center"
+                                    >
+                                        <div class="icon fs-1">
+                                            <i class="bi bi-linkedin"></i>
+                                        </div>
+                                        <div
+                                            class="ms-lg-3 text fs-5 fw-light d-flex align-items-center"
+                                        >
+                                            maulana909
+                                        </div>
+                                    </div>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/maulana_909"
+                                    class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
+                                    data-aos="fade-up"
+                                    data-aos-offset="20"
+                                    data-aos-delay="800"
+                                >
+                                    <div
+                                        class="socmed d-flex flex-column flex-lg-row align-items-center"
+                                    >
+                                        <div class="icon fs-1">
+                                            <i class="bi bi-instagram"></i>
+                                        </div>
+                                        <div
+                                            class="ms-lg-3 text fs-5 fw-light d-flex align-items-center"
+                                        >
+                                            noukode
+                                        </div>
+                                    </div>
+                                </a>
+                                <a
+                                    target="_blank"
+                                    href="https://www.facebook.com/hilmi.maulana.946"
+                                    class="fs-3 text-light text-decoration-none fw-light mb-lg-3 d-inline-block d-lg-block mx-1 mb-sm-1"
+                                    data-aos="fade-up"
+                                    data-aos-offset="20"
+                                    data-aos-delay="1000"
+                                >
+                                    <div
+                                        class="socmed d-flex flex-column flex-lg-row align-items-center"
+                                    >
+                                        <div class="icon fs-1">
+                                            <i class="bi bi-facebook"></i>
+                                        </div>
+                                        <div
+                                            class="ms-lg-3 text fs-5 fw-light d-flex align-items-center"
+                                        >
+                                            Hilmi Maulana
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center pt-3 pb-2">
+            <h6>
+                Build with
+                <i class="bi bi-heart-fill text-danger"></i>
+                By
+                <a
+                    href="http://github.com/noukode"
+                    target="_blank"
+                    class="text-light"
+                >
+                    NouKode
+                </a>
+            </h6>
+        </footer>
 
-    <!-- Modal Consol Management -->
-    <div class="modal fade" id="consolModal" tabindex="-1" aria-labelledby="consolModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Consolidate Management System</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="fw-bold">Description :</p>
-            <p>This application is the result of my collaboration with an employee from PT. TaniSupply Indonesia, or a company better known as the Tanihub E-Commerce platform, this system is used to detect items that have been prepared by the helper teams (pickers and packers) from different chambers to combine. With this system, the Console team will more easily identify a customer's order package is complete or lacking, with this system, it is hoped that it will make it easier and make packages to speed up delivery to customers.</p>
-            <p class="fw-bold">Type :</p>
-            <p>System Development</p>
-            <p class="fw-bold">Feature :</p>
-            <ul>
-              <li>Data Transaction Uploader</li>
-              <li>Monitored half complete, complete, undetected, delivered</li>
-              <li>User log activity</li>
-            </ul>
-            <p class="fw-bold">Technology :</p>
-            <ul>
-              <li>Codeigniter 3</li>
-              <li>MySQL</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <a href="https://consol.buildtechmedia.xyz" class="btn btn-primary" target="_blank">Demo</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        <!-- Modal Consol Management -->
+        <div
+            class="modal fade"
+            id="consolModal"
+            tabindex="-1"
+            aria-labelledby="consolModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Consolidate Management System
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Description :</p>
+                        <p>
+                            This application is the result of my collaboration
+                            with an employee from PT. TaniSupply Indonesia, or a
+                            company better known as the Tanihub E-Commerce
+                            platform, this system is used to detect items that
+                            have been prepared by the helper teams (pickers and
+                            packers) from different chambers to combine. With
+                            this system, the Console team will more easily
+                            identify a customer's order package is complete or
+                            lacking, with this system, it is hoped that it will
+                            make it easier and make packages to speed up
+                            delivery to customers.
+                        </p>
+                        <p class="fw-bold">Type :</p>
+                        <p>System Development</p>
+                        <p class="fw-bold">Feature :</p>
+                        <ul>
+                            <li>Data Transaction Uploader</li>
+                            <li>
+                                Monitored half complete, complete, undetected,
+                                delivered
+                            </li>
+                            <li>User log activity</li>
+                        </ul>
+                        <p class="fw-bold">Technology :</p>
+                        <ul>
+                            <li>Codeigniter 3</li>
+                            <li>MySQL</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="https://consol.buildtechmedia.xyz"
+                            class="btn btn-primary"
+                            target="_blank"
+                        >
+                            Demo
+                        </a>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Modal Stock Opname -->
-    <div class="modal fade" id="stockOpnameModal" tabindex="-1" aria-labelledby="stockModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="stockModalLabel">Stock Opname System</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="fw-bold">Description :</p>
-            <p>System to simplify the process of calculating stock and stock adjustment</p>
-            <p class="fw-bold">Type :</p>
-            <p>System Development</p>
-            <p class="fw-bold">Feature :</p>
-            <ul>
-              <li>Data Stock Uploader</li>
-              <li>Data Location Uploader</li>
-              <li>Assign user to specific location</li>
-              <li>Comparing data Latest SOH System, and Real stock</li>
-            </ul>
-            <p class="fw-bold">Technology :</p>
-            <ul>
-              <li>Codeigniter 4</li>
-              <li>MySQL</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <a href="https://opname-app.buildtechmedia.xyz" class="btn btn-primary" target="_blank">Demo</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        <!-- Modal Stock Opname -->
+        <div
+            class="modal fade"
+            id="stockOpnameModal"
+            tabindex="-1"
+            aria-labelledby="stockModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="stockModalLabel">
+                            Stock Opname System
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Description :</p>
+                        <p>
+                            System to simplify the process of calculating stock
+                            and stock adjustment
+                        </p>
+                        <p class="fw-bold">Type :</p>
+                        <p>System Development</p>
+                        <p class="fw-bold">Feature :</p>
+                        <ul>
+                            <li>Data Stock Uploader</li>
+                            <li>Data Location Uploader</li>
+                            <li>Assign user to specific location</li>
+                            <li>
+                                Comparing data Latest SOH System, and Real stock
+                            </li>
+                        </ul>
+                        <p class="fw-bold">Technology :</p>
+                        <ul>
+                            <li>Codeigniter 4</li>
+                            <li>MySQL</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="https://opname-app.buildtechmedia.xyz"
+                            class="btn btn-primary"
+                            target="_blank"
+                        >
+                            Demo
+                        </a>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Modal Travel -->
-    <div class="modal fade" id="travelModal" tabindex="-1" aria-labelledby="travelModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content bg-dark">
-          <div class="modal-header">
-            <h5 class="modal-title" id="travelModalLabel">El Burdah Travel Landing Page</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="fw-bold">Description :</p>
-            <p>Transporters is Company who work on Logistic, Transportation and Distribution sector.</p>
-            <p class="fw-bold">Type :</p>
-            <p>UI Design, Figma to HTML</p>
-            <p class="fw-bold">Responsibility :</p>
-            <ul>
-              <li>Create UI Design</li>
-              <li>Convert UI from Figma to Bootstrap CSS</li>
-              <li>Create Responsive Page</li>
-            </ul>
-            <p class="fw-bold">Technology :</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <a href="https://transporters.solutions" class="btn btn-primary" target="_blank">Website</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        <!-- Modal Travel -->
+        <div
+            class="modal fade"
+            id="travelModal"
+            tabindex="-1"
+            aria-labelledby="travelModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="travelModalLabel">
+                            El Burdah Travel Landing Page
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Description :</p>
+                        <p>
+                            Transporters is Company who work on Logistic,
+                            Transportation and Distribution sector.
+                        </p>
+                        <p class="fw-bold">Type :</p>
+                        <p>UI Design, Figma to HTML</p>
+                        <p class="fw-bold">Responsibility :</p>
+                        <ul>
+                            <li>Create UI Design</li>
+                            <li>Convert UI from Figma to Bootstrap CSS</li>
+                            <li>Create Responsive Page</li>
+                        </ul>
+                        <p class="fw-bold">Technology :</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="https://transporters.solutions"
+                            class="btn btn-primary"
+                            target="_blank"
+                        >
+                            Website
+                        </a>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
-  </html>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>
