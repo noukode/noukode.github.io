@@ -26,3 +26,20 @@ function sendMessage() {
         })
     );
 }
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        // center: true,
+        items:5,
+        loop:true,
+        margin:10,
+        nav:true,
+        stagePadding:200,
+        autoplay:true,
+        responsive:{
+            600:{
+                items:2
+            }
+        }
+    });
+})
