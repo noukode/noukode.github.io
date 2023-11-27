@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Asia Cyber Univercity",
+        "major": "Computer Science",
+        "start": "October, 2022",
+        "end": "Present",
+        "detail": ""
+    },
+    {
+        "id": 2,
+        "name": "College of Computer Science El Rahma",
+        "major": "Computer Science Diploma 1",
+        "start": "July, 2018",
+        "end": "June, 2019",
+        "detail": ""
+    },
+    {
+        "id": 3,
+        "name": "State Vocational High School 1 of Bogor",
+        "major": "Multimedia",
+        "start": "July, 2015",
+        "end": "June, 2018",
+        "detail": ""
+    }
+]

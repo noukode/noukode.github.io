@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SASS",
+        "image": "Sass.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "image": "tailwindcss.svg"
+    },
+    {
+        "name": "React",
+        "image": "React.svg"
+    }
+]

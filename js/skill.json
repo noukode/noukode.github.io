@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML",
+        "image": "html5.svg"
+    },
+    {
+        "name": "CSS",
+        "image": "CSS3.svg"
+    },
+    {
+        "name": "Javascript",
+        "image": "Javascript.svg"
+    },
+    {
+        "name": "Bootstrap",
+        "image": "Bootstrap.svg"
+    },
+    {
+        "name": "PHP",
+        "image": "PHP.svg"
+    },
+    {
+        "name": "MySQL",
+        "image": "MySQL.svg"
+    },
+    {
+        "name": "CodeIgniter",
+        "image": "codeigniter.svg"
+    },
+    {
+        "name": "Laravel",
+        "image": "Laravel.svg"
+    },
+    {
+        "name": "Docker",
+        "image": "docker.svg"
+    },
+    {
+        "name": "Git",
+        "image": "git.svg"
+    }
+]
