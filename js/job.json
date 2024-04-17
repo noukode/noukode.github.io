@@ -8,19 +8,19 @@
         "detail": ""
     },
     {
-        "id": 3,
-        "name": "Freelance",
-        "major": "Fullstack Developer",
-        "start": "March, 2021",
-        "end": "December, 2021",
-        "detail": ""
-    },
-    {
         "id": 1,
         "name": "Hadejun Simedic Indonesia",
         "major": "Fullstack Developer",
         "start": "January, 2022",
         "end": "June, 2023",
+        "detail": ""
+    },
+    {
+        "id": 3,
+        "name": "Freelance",
+        "major": "Fullstack Developer",
+        "start": "March, 2021",
+        "end": "December, 2021",
         "detail": ""
     },
     {
