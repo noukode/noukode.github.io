@@ -38,5 +38,17 @@
     {
         "name": "Git",
         "image": "git.svg"
+    },
+    {
+        "name": "SASS",
+        "image": "Sass.svg"
+    },
+    {
+        "name": "Tailwind CSS",
+        "image": "tailwindcss.svg"
+    },
+    {
+        "name": "Reactjs",
+        "image": "React.svg"
     }
 ]
