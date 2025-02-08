@@ -41,7 +41,7 @@ $(document).ready(function(){
             data.forEach(item => {
                 html += `
                 <div
-                    class="col-6 col-lg-2 mb-3"
+                    class="col-3 col-lg-1 mb-3"
                     data-aos="fade-down"
                     data-aos-offset="20"
                     data-aos-delay="${i}"
@@ -49,11 +49,11 @@ $(document).ready(function(){
                     <div class="card">
                         <img
                             src="img/${item.image}"
-                            class="card-img-top"
+                            class="card-img-top text-center"
                             alt="${item.name}"
                         />
-                        <div class="card-body">
-                            <h3 class="text-center">${item.name}</h3>
+                        <div class="card-body text-center p-0">
+                            <span class="mx-auto" style="font-size: 12px;white-space:nowrap;">${item.name}</span>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ $(document).ready(function(){
             data.forEach(item => {
                 html += `
                 <div
-                    class="col-6 col-lg-2 mb-3"
+                    class="col-3 col-lg-1 mb-3"
                     data-aos="fade-down"
                     data-aos-offset="20"
                     data-aos-delay="${i}"
@@ -85,8 +85,8 @@ $(document).ready(function(){
                             class="card-img-top"
                             alt="${item.name}"
                         />
-                        <div class="card-body">
-                            <h3 class="text-center">${item.name}</h3>
+                        <div class="card-body text-center p-0">
+                            <span class="mx-auto" style="font-size:12px;white-space:normal;">${item.name}</span>
                         </div>
                     </div>
                 </div>
