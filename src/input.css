@@ -1,0 +1,65 @@
+@config "./../tailwind.config.js";
+@import "tailwindcss";
+
+:root {
+    --sumbu-y: 150px;
+    --sumbu-x: 150px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.animation-bg {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -9999;
+}
+
+.circle-bg {
+    @apply absolute bg-primary w-[300px] h-[300px] rounded-full opacity-0;
+    filter: blur(40px);
+    animation: moveUp 15s linear;
+    transition: opacity 2s ease-in-out;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(120vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.2;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white/70 backdrop-blur;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark;
+}
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
