@@ -266,12 +266,12 @@ function openModal(id) {
 
     modalContent.innerHTML = `
                 <!-- Left: Portrait Image -->
-                <div class="w-full md:w-5/12 aspect-[4/5] md:aspect-auto md:h-auto overflow-hidden relative">
+                <div class="max-h-56 md:max-h-none md:w-5/12 aspect-[4/5] md:aspect-auto md:h-auto overflow-hidden relative bg-linear-65 from-sky-100 to-sky-50">
                     <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover">
                 </div>
                 
                 <!-- Right: Details -->
-                <div class="w-full md:w-7/12 p-8 md:p-12 flex flex-col justify-center relative overflow-y-auto">
+                <div class="w-full md:w-7/12 px-8 pt-24 pb-24 md:p-12 flex flex-col justify-center relative overflow-y-auto">
                     <button onclick="closeModal()" class="absolute top-4 right-4 md:top-6 md:right-6 p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-500 transition-colors z-10 focus:outline-none">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
