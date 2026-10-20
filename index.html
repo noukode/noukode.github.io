@@ -898,6 +898,25 @@
                 <!-- Data modal akan di-render di sini oleh JavaScript -->
             </div>
         </div>
+        <script>
+            window.onload = function () {
+                // ambil url saat ini tanpa http atau https
+                const currentUrl = window.location.href.replace(
+                    /^https?:\/\//,
+                    "",
+                );
+                // cek apakah halaman diakses melalui inAppBrowser seperti instagram atau whatsapp
+                const userAgent =
+                    navigator.userAgent || navigator.vendor || window.opera;
+                const isInAppBrowser = /Instagram|FBAN|FBAV|WhatsApp/i.test(
+                    userAgent,
+                );
+                if (isInAppBrowser) {
+                    // jika ya, tampilkan alert
+                    window.location.href = `intent://${currentUrl}#Intent;scheme=https;package=com.android.chrome;end`;
+                }
+            };
+        </script>
         <script src="dist/js/script.js"></script>
     </body>
 </html>
